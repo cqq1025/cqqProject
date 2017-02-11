@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员登录</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--针对双核浏览器启用“急速模式”渲染-->
+		<meta name="renderer" content="webkit">
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	</head>
+	<body style="background:url(img/cheat.jpg) no-repeat;background-size:100% auto;">
+		<div style="width:40rem; height: 40rem;background: rgba(0,0,0,.5);position: absolute;top: 50%;right: 15%;margin-top: -20rem;padding: 3rem;box-shadow: 10px 20px rgba(0,0,0,.3);">
+			<div style="font-family: verdana;color: #D5B841;font-size: 2rem;margin-bottom: 2rem;">
+				<span>管理员登录</span>
+				<small class="pull-right"><a  style="font-size: 0.5rem;cursor: pointer;color: #D5B841;" href="index.html">返回首页</a></small>
+			</div>
+				<form action="index.html" method="post" class="form-horizontal" style="padding: 2rem 5rem;">
+					<div class="input-group" style="margin-bottom: 2rem;">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-user"></span>
+						</div>
+						<input type="text" class="form-control" />
+						<p class="admin"></p>
+					</div>
+					<div class="input-group" style="margin-bottom: 1rem;">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-lock"></span>
+						</div>
+						<input type="text" class="form-control" />
+						<p class="psw"></p>
+					</div>
+					<a class="pull-right" style="color: #f00;"><u>忘记密码</u></a><br />
+					<div class="input-group" style="margin:2rem;">
+						<input type="text" class="form-control" placeholder="填写手机号码"/>
+						<span class="input-group-addon" style="cursor: pointer;">发送验证码
+						</span>
+					</div>
+					<a href="adminControl.html" class="btn btn-success btn-block"style="margin-top: 2rem;">登录</a>
+				</form>
+		</div>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

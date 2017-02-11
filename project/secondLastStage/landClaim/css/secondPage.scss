@@ -1,0 +1,88 @@
+@import 'amazeui';
+
+body{margin: 0;padding: 0;}
+$bg:#f8f8f8;
+@mixin padding{padding: 0 5rem;}
+.fl{float: left;}
+header{
+    @include padding;
+    img{
+        height: 40px;
+    }    
+}
+.svg{
+    @include padding;
+}
+.divise{background: $bg;height: 10rem;}
+.form{
+    @include padding; 
+    background: $bg;
+    .am-form-group{
+        a{
+            cursor: pointer;
+        }
+        label{
+            color: #999!important;
+        }
+        input{
+            margin-left: 1rem;
+            &：first-child{
+                margin-left: 0.2rem;
+            }
+        }
+    }
+    
+}
+.card{
+    li{
+        a{
+          img{
+                height: 16rem!important;
+            }  
+        }
+    }
+    
+}
+.foot{
+    cursor: pointer;
+    color: #999;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.8);
+    padding: 1rem;
+    font-family: helvetica;
+    .foot-top{
+        ul{
+            list-style: none;
+            .divise-line{
+                background: url(../img/divise_line.jpg) right top repeat-y;
+                width: 16rem;
+                &:nth-child(3){
+                    background: none;
+                }
+            }
+            
+            .relation{
+                text-align: center;
+            }
+            li{
+                padding: 0.51rem;
+                
+                dl{
+                    dt{text-align: center;}
+                }
+                .blog{
+                    text-align: center;
+                   dl{
+                       margin-bottom: 50px;
+                   }
+                }
+            }
+        }
+    }
+    .foot-bottom{
+        padding: 1rem;
+        text-align: center;
+        background: url(../img/line_bg.jpg) repeat-x;
+    }
+}

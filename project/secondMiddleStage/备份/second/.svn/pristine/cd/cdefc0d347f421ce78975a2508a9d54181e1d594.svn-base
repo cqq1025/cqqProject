@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>运动</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
+		<script src="js/vivus.js"></script>
+
+	</head>
+
+	<body>
+		<header class="display-box clearfix">
+			<div class="coverTopLeft fl  box-flex-1">
+				<svg version="1.1" id="topLeftCover" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="50px" viewBox="0 0 100 50" style="enable-background:new 0 0 100 50;" xml:space="preserve">
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M14.085,33.117c-3.357,0-6.219-1.094-8.275-3.162
+									c-2.083-2.096-3.266-5.135-3.248-8.344c0-7,5.095-12.085,12.116-12.085c2.407,0,4.085,0.507,5.088,0.81
+									c0.192,0.058,0.354,0.108,0.485,0.141l0.657,0.164l0.092,0.67c0.226,1.645,0.369,3.23,0.534,5.065l0.08,0.888l-1.345,0.364
+									l-0.979,0.203l-0.203-0.979c-0.679-3.281-2.142-4.501-5.396-4.501c-6.585,0-7.097,6.464-7.097,8.446
+									c0,5.791,2.853,9.533,7.267,9.533c3.234,0,4.633-1.918,5.956-5.231l0.353-0.884l2.227,0.765l-0.198,0.875
+									c-0.29,1.282-1.017,4.399-1.507,5.696l-0.2,0.529l-0.557,0.102c-0.198,0.035-0.484,0.102-0.832,0.182
+									C17.877,32.645,15.827,33.117,14.085,33.117z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M32.004,32.889h-0.233
+									c-0.423,0-1.142-0.391-1.478-0.727c-0.09-0.098-0.168-0.191-0.237-0.287c-0.806,0.561-1.651,1.014-2.503,1.014
+									c-2.128,0-3.796-1.646-3.796-3.75c0-1.572,1.05-2.689,3.12-3.319c0.968-0.284,1.963-0.654,2.579-0.928
+									c-0.076-1.413-0.448-1.671-1.179-1.671c-0.239,0.017-0.864,0.056-1.118,1.256c-0.214,0.758-0.8,1.203-1.51,1.203
+									c-0.934,0-1.723-0.833-1.723-1.819c0-0.4,0.154-1.159,1.185-1.739c0.146-0.104,2.105-1.416,3.669-1.768L29,20.329
+									c1.771,0,3.676,1.219,3.676,3.894v5.183c0,0.166,0.014,0.281,0.028,0.359c0.145-0.027,0.278-0.086,0.367-0.143l0.913-0.576
+									l1.202,2.273L32.004,32.889z M29.468,27.643C29.24,27.736,29,27.83,28.756,27.928l-0.463,0.186
+									c-1.116,0.422-1.116,0.67-1.116,0.834c0,0.742,0.636,0.904,0.88,0.904c0.392,0,1.01-0.289,1.411-0.633V27.643z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M55.258,32.625l-20.2-0.002v-2.27l0.932-0.064
+									c0.824-0.057,1.01-0.154,1.048-0.184c0.005-0.016,0.069-0.17,0.069-0.795v-4.75c0-0.186,0-0.635-0.033-0.848
+									c-0.185-0.063-0.569-0.138-0.749-0.173l-0.81-0.157v-1.945l0.79-0.17c0.918-0.198,1.792-0.412,2.399-0.848l1.583-1.138v2.043
+									c1.362-0.83,2.055-0.997,2.833-0.997c0.925,0,2.089,0.486,2.881,1.533c2.228-1.407,2.983-1.533,3.652-1.533
+									c2.271,0,3.917,1.648,3.917,3.918v4.942c0,0.752,0.053,0.982,0.086,1.055c-0.012-0.037,0.146,0.01,0.668,0.045l0.934,0.063V32.625
+									z M40.364,30.221c0.033,0,0.18,0.041,0.538,0.066l0.76,0.055v-0.006l0.947-0.051c0.839-0.043,1.029-0.143,1.067-0.172
+									c0.01-0.021,0.083-0.191,0.083-0.926v-3.906c0-1.609-0.501-1.893-1.556-1.893c-0.636,0-1.339,0.474-1.941,0.921v4.877
+									c0,0.764,0.063,0.979,0.094,1.037C40.355,30.223,40.358,30.221,40.364,30.221z M47.016,30.197c0.022,0,0.177,0.057,0.654,0.09
+									l0.763,0.051l0.873-0.049c0.795-0.047,0.97-0.137,1.005-0.164c0.011-0.018,0.103-0.189,0.103-0.984v-3.762
+									c0-1.681-0.508-1.988-1.508-1.988c-0.505,0.025-1.189,0.318-2.007,0.873c0.011,0.109,0.018,0.201,0.018,0.271v4.653
+									c0,0.764,0.069,0.963,0.098,1.014C47.013,30.199,47.014,30.197,47.016,30.197z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M61.668,37.238h-7.377v-2.223l0.932-0.064
+									c0.627-0.043,0.764-0.123,0.783-0.141c0.002-0.006,0.094-0.156,0.094-0.838V23.122c0-0.175,0-0.591-0.027-0.803
+									c-0.199-0.059-0.594-0.125-0.824-0.163l-0.836-0.139v-2.016l0.846-0.132c0.678-0.106,1.857-0.518,2.523-0.879l1.477-0.804v1.896
+									l1.496-0.647c0.488-0.186,0.895-0.324,1.363-0.324c3.326,0,5.313,2.617,5.313,5.147c0,3.838-2.994,6.815-7.451,7.403l-0.1,0.014
+									l-0.1-0.006c-0.174-0.014-0.35-0.035-0.521-0.068v2.061c0,0.869,0.09,1.055,0.117,1.09c0.049,0.043,0.281,0.152,1.34,0.201
+									l0.953,0.045V37.238z M59.26,28.055c0.412,0.32,1.029,0.506,1.721,0.506c1.42,0,3.076-0.895,3.076-3.413
+									c0-0.917-0.277-3.05-2.855-3.05c-0.518,0-1.322,0.273-1.941,0.639V28.055z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M74.965,31.67H74.73
+									c-0.457,0-1.18-0.432-1.477-0.729c-0.09-0.098-0.168-0.191-0.236-0.287c-0.809,0.563-1.652,1.014-2.504,1.014
+									c-2.129,0-3.797-1.646-3.797-3.748c0-1.574,1.049-2.69,3.121-3.319c0.967-0.285,1.961-0.656,2.578-0.93
+									c-0.078-1.403-0.463-1.67-1.18-1.67c-0.238,0.017-0.865,0.056-1.119,1.257c-0.209,0.753-0.793,1.203-1.508,1.203
+									c-0.934,0-1.723-0.833-1.723-1.819c0-0.401,0.154-1.161,1.184-1.74c0.146-0.104,2.107-1.416,3.67-1.768l0.221-0.024
+									c1.77,0,3.676,1.218,3.676,3.893v5.184c0,0.166,0.014,0.281,0.027,0.359c0.146-0.029,0.281-0.088,0.365-0.143l0.912-0.578
+									l1.205,2.273L74.965,31.67z M72.43,26.422c-0.236,0.096-0.484,0.193-0.736,0.295l-0.441,0.176
+									c-1.115,0.422-1.115,0.67-1.115,0.836c0,0.742,0.637,0.904,0.881,0.904c0.391,0,1.01-0.289,1.412-0.635V26.422z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M83.633,31.404h-6.75v-2.264l0.924-0.072
+									c0.641-0.049,0.807-0.123,0.842-0.145c-0.02,0.018,0.02-0.135,0.02-0.689v-5.016c0-0.44-0.018-0.662-0.037-0.773
+									c-0.174-0.057-0.529-0.119-0.678-0.146l-0.828-0.145v-1.961l0.791-0.169c0.957-0.205,1.641-0.449,2.443-0.871l1.465-0.771v9.853
+									c0,0.547,0.045,0.697,0.064,0.738c-0.014-0.033,0.154,0.047,0.82,0.098l0.924,0.07V31.404z M80.27,17.71
+									c-1.039,0-1.916-0.899-1.916-1.964c0-1.11,0.859-2.013,1.916-2.013s1.916,0.903,1.916,2.013
+									C82.186,16.811,81.309,17.71,80.27,17.71z" />
+						</g>
+					</g>
+					<g>
+						<g>
+							<path style="fill:none;stroke:#4A4949;stroke-width:2;stroke-miterlimit:10;" d="M90.855,31.402H84.01v-2.271l0.932-0.064
+									c0.623-0.043,0.754-0.133,0.768-0.143c0.002-0.008,0.086-0.145,0.086-0.764v-4.846c0-0.487-0.02-0.726-0.041-0.84
+									c-0.162-0.056-0.496-0.122-0.672-0.157l-0.807-0.159v-1.916l0.928-0.232c0.828-0.206,1.609-0.4,2.152-0.803l1.596-1.188v2.121
+									l0.271-0.186c0.711-0.432,1.527-0.847,2.514-0.847c2.512,0,4.135,1.623,4.135,4.134v4.798c0,0.582,0.031,0.84,0.061,0.953
+									c0.08,0.021,0.244,0.051,0.576,0.074l0.93,0.064v2.27L90.855,31.402z M89.035,28.949c0.021,0,0.211,0.078,0.879,0.117l0.91,0.051
+									l0.902-0.053c0.715-0.041,0.885-0.125,0.92-0.148c-0.002-0.012,0.066-0.182,0.066-0.877v-3.954c0-1.604-0.588-1.917-1.604-1.917
+									c-0.746,0-1.568,0.426-2.158,0.913v4.981c0,0.668,0.057,0.844,0.082,0.889C89.033,28.949,89.033,28.949,89.035,28.949z" />
+						</g>
+					</g>
+				</svg>
+
+			</div>
+			<div class="coverTopRight fr">
+				<button class="coverBtn1">现在购买</button>
+			</div>
+		</header>
+		<div class="cover">
+
+			<video src="img/cover/intro.mp4"></video>
+			<div class="coverBottom">
+				<div class="coverBottomLeft">
+					<span>我们的家具与你的<br />
+						生活、运动一起成长</span>
+				</div>
+				<div class="coverBottomRight">
+					<div class="coverGo">
+						<p>让我们一起“走吧”</p>
+						<img src="img/cover/bottomA.png" style="width: 5em;height: 4em;" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="container" style="display: none;">
+			<div class="section">
+				<div class="first">
+					<video src="img/first/video/scene-2.mp4" autoplay loop class="video-fill active">
+					</video>
+					<video src="img/first/video/scene-3.mp4" autoplay  class="video-fill">
+					</video>
+					<video src="img/first/video/scene-4.mp4" autoplay loop class="video-fill">
+					</video>
+					<video src="img/first/video/scene-5.mp4" autoplay  class="video-fill">
+					</video>
+					<video src="img/first/video/scene-6.mp4" autoplay loop class="video-fill">
+					</video>
+					<div class="one-word">
+						<h1>为你而做</h1>
+						<p>周到的设计,运动</p>
+						<p>家具改变你的生活方式。</p>
+						<p>简洁的线条，经典的比例，</p>
+						<p>和令人难以置信的舒适性。</p>
+						<span>在$&nbsp;495起</span>
+					</div>
+					<div class="two one-word">
+						<h1>两倍的空间</h1>
+						<p>运动活动的目的是跟上</p>
+						<p>你的生活节奏。容易携带和</p>
+						<p>打包的行李，让我们轻装旅行。</p>
+					</div>
+					<!--<video src="img/first/video/scene-4.mp4" autoplay class="video-fill2">
+					</video>-->
+					<div class="three one-word">
+						<h1>可增大的房间</h1>
+						<p>当你的生活变化时,运动动作</p>
+						<p>和你在一起。我们会在3 - 5个</p>
+						<p>工作日内随时交付给您。</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="section secondApproach">
+				<div class="txtBox">
+					<h3 class="secondTitle">一个永恒的方法</h3>
+					<p>周到的细节，流线型的轮廓和现代感，<br />运动家具的设计是为了补充任何空间、风格和时间。</p>
+				</div>
+				<img class="sImg" src="img/second/img01.png" alt="" />
+			</div>
+
+			<div class="section thirdBox">
+				<div class="thirdLeft">
+					<h3>光滑的和强大的</h3>
+					<p>与激光切割、粉饰钢结构和固体 硬木腿,<br /> 活动是足够强大的
+						<br /> 整个家庭,足够坚固的最后一代,
+						<br /> 这是光足以提振。
+						<br />
+					</p>
+					<hr />
+					<div class="clearfix">
+						<p class="fl"><span>37"</span>Deth</p>
+						<p class="fl"><span>32"</span>height</p>
+					</div>
+				</div>
+				<img src="img/fourth/sofa.png" />
+			</div>
+			<div class="section fifth">
+				<img src="img/fifth/pan-3-tablet.jpg" />
+				<div class="fifthDes">
+					<h1>材料</h1>
+					<h1>那件事</h1>
+					<div>
+						我们想要离开我们一个更好的世界 发现它,所以我们设计了持久的产品 最小的环境足迹。我们的来源 可回收的钢铁从加州可持续的木材 中西部和各地的天然纤维 全球。
+					</div>
+				</div>
+			</div>
+			<div class="section sixthP">
+				<div class="txtBox">
+					<h3>便捷的生活</h3>
+					<p>有一把自由的椅子去你想去的地方,你要去哪里的话就拆开并装好它--这很容易.<br>自己在下面看吧!</p>
+				</div>
+				<div class="sixTxt">
+					<span class="numb1">1</span>
+					<h3>没有必要的工具</h3>
+					<p>两只手.三分钟.<br>即可组装完成.</p>
+				</div>
+				<div class="sixRight">
+					<span class="numb1">2</span>
+					<h3>为移动而设计</h3>
+					<p>完美的包装成两个盒子，便于储存和运输。<br>雇佣的推动者和凹陷的墙都已成为过去。</p>
+				</div>
+				<div class="sixLast">
+					<span class="numb1">3</span>
+					<h3>自由且快速运输</h3>
+					<p>我们通过联邦快递和快速的包装，<br>到达您的家只有3-5天的门。</p>
+				</div>
+				<div class="imgBox">
+					<img class="sixImg" src="img/sixth/img01.jpg" />
+					<img class="sixImg" src="img/sixth/img02.jpg" alt="" />
+					<img class="sixImg" src="img/sixth/img03.jpg" />
+					<img class="sixImg" src="img/sixth/img04.jpg" />
+					<img class="sixImg" src="img/sixth/img05.jpg" alt="" />
+					<img class="sixImg" src="img/sixth/img06.jpg" />
+					<img class="sixImg" src="img/sixth/img07.jpg" />
+					<img class="sixImg" src="img/sixth/img08.jpg" />
+					<img class="sixImg" src="img/sixth/img09.jpg" />
+					<img class="sixImg" src="img/sixth/img10.jpg" />
+					<img class="sixImg" src="img/sixth/img11.jpg" />
+					<img class="sixImg" src="img/sixth/img12.jpg" />
+					<img class="sixImg" src="img/sixth/img13.jpg" />
+					<img class="sixImg" src="img/sixth/img14.jpg" />
+					<img class="sixImg" src="img/sixth/img15.jpg" />
+					<img class="sixImg" src="img/sixth/img16.jpg" />
+					<img class="sixImg" src="img/sixth/img17.jpg" />
+					<img class="sixImg" src="img/sixth/img18.jpg" />
+					<img class="sixImg" src="img/sixth/img19.jpg" />
+					<img class="sixImg" src="img/sixth/img20.jpg" />
+					<img class="sixImg" src="img/sixth/img21.jpg" />
+					<img class="sixImg" src="img/sixth/img22.jpg" alt="" />
+					<img class="sixImg" src="img/sixth/img23.jpg" />
+					<img class="sixImg" src="img/sixth/img24.jpg" />
+					<img class="sixImg" src="img/sixth/img25.jpg" alt="" />
+					<img class="sixImg" src="img/sixth/img26.jpg" />
+					<img class="sixImg" src="img/sixth/img27.jpg" />
+					<img class="sixImg" src="img/sixth/img28.jpg" />
+					<img class="sixImg" src="img/sixth/img29.jpg" />
+					<img class="sixImg" src="img/sixth/img30.jpg" />
+					<img class="sixImg" src="img/sixth/img31.jpg" />
+					<img class="sixImg" src="img/sixth/img32.jpg" />
+					<img class="sixImg" src="img/sixth/img33.jpg" />
+					<img class="sixImg" src="img/sixth/img34.jpg" />
+					<img class="sixImg" src="img/sixth/img35.jpg" />
+					<img class="sixImg" src="img/sixth/img36.jpg" />
+					<img class="sixImg" src="img/sixth/img37.jpg" />
+					<img class="sixImg" src="img/sixth/img38.jpg" />
+					<img class="sixImg" src="img/sixth/img39.jpg" />
+					<img class="sixImg" src="img/sixth/img40.jpg" />
+					<img class="sixImg" src="img/sixth/img41.jpg" />
+					<img class="sixImg" src="img/sixth/img42.jpg" />
+				</div>
+
+			</div>
+			<div class="section seventh">
+				<div class="seventhVideo">
+					<video src="img/fifth/car.mp4"></video>
+				</div>
+
+				<div class="seventhDes">
+					<h1>路上做了充足准备</h1>
+					<div class="seventhDescripte">
+						<p>你和我们不在一个地方也一样</p>
+						<p>我们的产品容易塞进一辆车、卡车或飞机。</p>
+						<p>你无论在哪儿需要它，Campaign将带给你</p>
+					</div>
+				</div>
+			</div>
+			<div class="section quality-life">
+				<div class="quality-life-word">
+					<h1>品质生活</h1>
+					<p>激光切割钢结构可移动的盖子,活动家具</p>
+					<span>是由最大的质量和强度。</span>
+				</div>
+				<div class="type">
+					<div class="chair">
+						<img src="img/qualityLife/seat-1-green.jpg" />
+						<h2>椅子</h2>
+						<p>$495</p>
+						<ul class="clearfix">
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl active">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+						</ul>
+						<span>柑橘绿</span>
+					</div>
+					<div class="loveseat">
+						<img src="img/qualityLife/seat-2-orange.jpg">
+						<h2>双人小沙发</h2>
+						<p>$745</p>
+						<ul class="clearfix">
+							<li class="fl active">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl ">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+						</ul>
+						<span>日落橙红</span>
+					</div>
+					<div class="sofa">
+						<img src="img/qualityLife/seat-3-blue.jpg">
+						<h2>沙发</h2>
+						<p>$995</p>
+						<ul class="clearfix">
+							<li class="fl ">
+								<div></div>
+							</li>
+							<li class="fl active">
+								<div></div>
+							</li>
+							<li class="fl ">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+							<li class="fl">
+								<div></div>
+							</li>
+						</ul>
+						<span>午夜蓝</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="section nineBox">
+				<h3>加入我们的旅程 </h3>
+				<p>We're on the move. <br /> Sign up below to stay in touch.
+				</p>
+				<div class="inputBox">
+					<input type="text" name="" id="" value="" placeholder="请输入邮箱地址" />
+				</div>
+				<div class="loginBtn">现在加入</div>
+				<hr />
+				<h4>想与我们合作吗</h4>
+				<p>欢迎加入我们</p>
+			</div>
+			<div class="section">
+				<h1>谁谁谁</h1>
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.fullpage.js"></script>
+		<script src="js/scrolloverflow.min.js"></script>
+
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

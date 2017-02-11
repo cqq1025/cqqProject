@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<!--网页三要素-->
+		<title>新版售票</title>
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<!--设置IE 强制用最高版本渲染-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 设置360 搜狗  让双核浏览器强制用webkit内核渲染 -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免百度代码嵌套-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<title>新版售票</title>
+		<link rel="stylesheet" type="text/css" href="css/second.css"/>
+	</head>
+	<body>
+		<div class="head">
+			<div class="head-bar clearfix">
+				<h1 class="fl ind"></h1>
+				<div class=" fr">
+					<div class="head-top">
+						<ul>
+							<li class="fl">意见反馈：<a>12306yjfk@rails.com.cn</a></li>
+							<li class="fl">您好，请<a>登录</a>&nbsp;|&nbsp;<a>注册</a></li>
+							<li class="fl fMeniu">我的12306<span>▼</span>
+								<div class="meniu">
+									<div class="dialog-top" >
+										<img src="img/dialog.png" style="margin: 0 40%;"/>
+									</div>
+									<div class="dialog-bottom">
+										<ul>
+											<li><div class="txt">未完成订单</div></li>
+											<li><div class="txt">已完成订单（改/退）</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px;"></div>
+											<li><div class="txt">我的保险</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px"></div>
+											<li><div class="txt">查看个人信息</div></li>
+											<li><div class="txt">账户安全</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px"></div>
+											<li><div class="txt">常用联系人</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px"></div>
+											<li><div class="txt">重点旅客预约</div></li>
+											<li><div class="txt">遗失物品查找</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px"></div>
+											<li><div class="txt">服务查询</div></li>
+											<div style="width: 150px;height: 1px;border-bottom: 1px dashed #cecece;margin-top: 2px"></div>
+											<li><div class="txt">投诉</div></li>
+											<li><div class="txt">建议</div></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="fl phone" ><span style="margin-left: 25px;">手机版</span></li>
+						</ul>
+					</div>
+					<div class="top-nav">
+						<ul class="top-row2">
+							<li class="fl nav active">客运首页</li>
+							<li class="fl nav">车票预定</li>
+							<li class="fl nav">余票查询</li>
+							<li class="fl nav " id="guide">出行向导
+								<div class="guide1 fr">
+									<ul class="clearfix">
+										<li class="fl">代售点查询</li>
+											<li class="fl">正晚点查询</li>
+											<li class="fl">中转查询</li>
+											<li class="fl">车站车次查询</li>
+											<li class="fl">公布票价查询</li>
+											<li class="fl">票价查询</li>
+											<li class="fl" style="margin-right: 10px;width: 60px;">车次查询</li>
+									</ul>
+								</div>
+							</li>
+							<li class="fl nav">信息服务</li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="tip">
+			<ul class="clearfix">
+				<li class="fl">温馨提示：&nbsp;12306.cn网站每日06:00~23:00提供服务，在12306.cn网站购票、改签和退票须不晚于开车前30分钟；办理“变更到站”业务时，请不晚于开车前48小时</li>
+				<li class="exit fr"><img src="img/exit.png"/></li>
+			</ul>
+		</div>
+		<div class="content clearfix">
+			<div class="left fl">
+				<div class="left1">
+					<div class="left1-top">
+						车票查询
+					</div>
+					<div class="left1-middle">
+						<div class="row1">
+							<input type="radio"  name="route" checked="checked" class="single"/>单程&nbsp;&nbsp;
+							<input type="radio"  name="route" class="goback"/>往返
+						</div>
+						<div class="split"></div>
+						<div class="row2">
+							<label>出发地</label>&nbsp;<input type="text" class="start" style="border: 1px solid #CECECE;"/><span class="pos1"><div class="place1" style="display: none; background: url(img/place.png);"></div></span><br />
+							<label>目的地</label>&nbsp;<input type="text" class="end" style="margin-bottom: 10px;border: 1px solid #CECECE;" /><span class="pos2" "><div class="place2" style="display: none; background: url(img/place.png);"></div></span><br />
+							<label>出发日</label>&nbsp;<input type="text" style="border: 1px solid #CECECE;" /><span class="pos3"><div class="rili1" style="display: none; background: url(img/rili.png);"></div></span><br />
+							<label style="color: #ababab;" class="back">返程日</label>&nbsp;<input type="text"  readonly="readonly" class="backTxt"style="border: 1px solid #CECECE;"/><span class="pos4"><div class="rili2" style="display: none; background: url(img/rili.png);"></div></span><br />
+							<input type="radio" style="width: 10px;height: 10px;margin-left: 65px;margin-top: 10px;"name="identity" checked="checked"/><label style="font-family: '微软雅黑';font-size: 12px;" >普通</label>
+							<input type="radio" style="width: 10px;height: 10px;margin-left: 30px;" name="identity"/><label style="font-family: '微软雅黑';font-size: 12px;">学生</label>
+							<button class="sub" style="outline: 0;border: 1px solid #cecece;">查询</button>
+							<div class="shift"></div>
+						</div>
+					</div>
+				</div>
+				<div class="left2">
+					<div class="left2-top">
+						出行向导
+					</div>
+					<div class="left2-row">
+						<div class="left2-row1">
+							<ul class="clearfix">
+								<li class="fl" style="background: url(img/inquiry.png) no-repeat; background-size:100% 100%;"></li>
+								<li class="fl" style="background: url(img/tranceinquiry.png) no-repeat; background-size:100% 100%;"></li>
+								<li class="fl" style="background: url(img/priceinquiry.png) no-repeat; background-size:100% 100%;"></li>
+								<li class="fl" style="background: url(img/timeinquiry.png) no-repeat; background-size:100% 100%;"></li>
+								<li class="fl" style="background: url(img/placeinquiry.png) no-repeat; background-size:100% 100%;"></li>
+							</ul>
+						</div>
+						<div class="left2-row2">
+							<ul class="clearfix">
+								<li class="fl">车站查询</li>
+								<li class="fl">中转查询</li>
+								<li class="fl">票价查询</li>
+								<li class="fl">正晚点查询</li>
+								<li class="fl">客票代售点</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right fr">
+				<div class="right1">
+					<ul class="clearfix">
+						<li class="fl information active">咨询</li>
+						<li class="fl information">最新动态</li>
+						<li class="fl information">购票常见问题</li>
+						<li class="fl information">使用须知</li>
+						<li class="fl information">相关规章</li>
+						<li class="fl information" style="border-right: none;">铁路保险</li>
+					</ul>
+				</div>
+				<div class="right2">
+					<ul>
+						<li class="detail " id="show" style="background: url(img/sban.jpg) no-repeat;background-size: 100% 100%;width: 600px;height: 382px;"></li>
+						<li class="detail">
+							<ul class="list clearfix" >
+								<li><div class="num fl">1</div><div class="fl">关于调整网络售票时间的公告</div><div class="fl" style="background: url(img/snew.png) no-repeat; width: 30px; height: 15px;margin-top: 10px;"></div><span class="fr">2016-09-14</span></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl">2</div>公告<span class="fr">2016-09-14</span></li>
+								<li><div class="num fl" >3</div>关于调整互联网、电话订票起售时间的公告<span class="fr" >2016-09-14</span></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >4</div>公告<span class="fr">2016-09-14</span></li>
+								<li><div class="num fl" >5</div>哈尔滨铁路局关于修改前发<<关于哈尔滨-齐齐哈尔南D7937次调整为哈尔滨...<span class="fr">2016-09-14</span></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >6</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告<span class="fr">2016-09-14</span></li>
+								<li><div class="num fl" >7</div>上海铁路局关于2016年9月14日-10月8日增加部分旅车的公告<span class="fr">2016-09-14</span></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >8</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告<span class="fr">2016-09-14</span></li>
+								<li><div class="num fl" >9</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告<span class="fr">2016-09-14</span></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >10</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告<span class="fr">2016-09-14</span></li>
+							</ul>
+						</li>
+						<li class="detail">
+							<ul class="list clearfix"  >
+								<li><div class="num fl">1</div><div>身份证核验结果有哪几种?</div></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl">2</div>公告</li>
+								<li><div class="num fl" >3</div>关于调整互联网、电话订票起售时间的公告</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >4</div>公告</li>
+								<li><div class="num fl" >5</div>哈尔滨铁路局关于修改前发<<关于哈尔滨-齐齐哈尔南D7937次调整为哈尔滨...</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >6</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+								<li><div class="num fl" >7</div>上海铁路局关于2016年9月14日-10月8日增加部分旅车的公告</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >8</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+								<li><div class="num fl" >9</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >10</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+							</ul>
+						</li>
+						<li class="detail">
+							<ul class="list clearfix" >
+								<li><div class="num fl">1</div>注册新用户</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl">2</div>公告</li>
+								<li><div class="num fl" >3</div>关于调整互联网、电话订票起售时间的公告</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >4</div>公告</li>
+								<li><div class="num fl" >5</div>哈尔滨铁路局关于修改前发<<关于哈尔滨-齐齐哈尔南D7937次调整为哈尔滨...</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >6</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+								<li><div class="num fl" >7</div>上海铁路局关于2016年9月14日-10月8日增加部分旅车的公告</li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >8</div>上海铁路局关于2016年9月30日-10月8日部分旅车恢复开行的公告</li>
+							</ul>
+						</li>
+						<li class="detail">
+							<ul class="list clearfix">
+								<li><div class="num fl">1</div><<铁路互联网售票暂行办法>></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl">2</div><<铁路旅客运输规程>></li>
+								<li><div class="num fl" >3</div><<铁路互联网购票须知>></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl" >4</div><<铁路旅客办理细则>></li>
+								<li><div class="num fl" >5</div><<铁路互联网购票身份验证须知>></li>
+							</ul>
+						</li>
+						<li class="detail">
+							<ul class="list clearfix">
+								<li><div class="num fl">1</div><<铁路旅客人身意外伤害保险条款>></li>
+								<li style="border: 1px dashed #d9d9d9;background: #eef1f8;"><div class="num fl">2</div><<铁路旅客人身意外伤害保险投保须知>></li>
+								<li><div class="num fl" >3</div><<铁路旅客人身意外伤害保险常见问题>></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+				<ul>
+					<li><a href="#"><span>关于我们</span></a>|<a href="#"><span>网站声明</span></a></li>
+					<li>版权所有©2008-2015中国铁路信息技术中心&nbsp;中国铁道科学研究院</li>
+					<li>京ICP备15003716号-3|京ICP证150437号</li>
+				</ul>
+		</div>
+		<script src="js/second.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

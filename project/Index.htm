@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>贪食蛇</title>
+    <script type="text/javascript">
+         /*全局变量*/
+         var maxScope =30;    //表格30X30
+         var snakeBody = new Array();   //定义数组，存储蛇的坐标。蛇的身体可以是多个，所以需要数组存放。
+         var nowDirection ="left";  //记录蛇运行的方向，默认向左移动
+         var timer;
+         var foodPointer;  //全局食物坐标
+         
+         //step1：初始化游戏的
+         function init(){
+            //绘制表格,蛇运行的区域  30X30的表格
+            var str="<table>";
+            for(i=0;i<maxScope;i++){   //i循环是表示行 
+                str+="<tr>";
+                for(j=0;j<maxScope;j++){  //j循环表示列  
+                    str+="<td id="+i+"-"+j+"></td>";   //i-j     
+                }
+                
+                str+="</tr>";
+            }
+            str+="</table>"; 
+             //div标记 有一个 innerHTML 属性
+            document.getElementById("page").innerHTML = str;
+          //step1 end
+          
+          //step5:调用initSnake()函数画出蛇
+          initSnake();
+          //step8:调用初始化食物initFood()函数
+          initFood();   
+          //step10:通过setInterval()方法，间隔1秒钟就移动一次蛇
+          timer = window.setInterval("snakeMove()",300);
+         }
+        
+        //step2:产生蛇的随机出现 
+        function initSnake(){
+            var x = Math.round( Math.random() * (maxScope-1) );   //产生0-29之间的随机数作为 蛇x坐标
+            var y = Math.round( Math.random() * (maxScope-1));
+            var nowSnakePointer =x+"-"+y;    //5-4    10-20
+            //设置td的id属性等于 nowSnakePointer 里面坐标的 颜色  
+            setSnake(nowSnakePointer);
+            
+            //将产生的蛇坐标存储到数组中，记录起来。当前只有一个身体，坐标也就一个
+            snakeBody.push(nowSnakePointer);
+        } 
+        
+        //step3:独立设置td背景颜色的函数
+        function setSnake(id){
+            document.getElementById(id).style.backgroundColor="green";
+        }
+        
+        //step4:恢复背景颜色设置
+        function resetSnake(id){
+            document.getElementById(id).style.backgroundColor="";   //恢复本来的td颜色了
+        }
+        
+        //step6:初始化食物
+        function initFood(){
+            var x = Math.round( Math.random() * (maxScope-1) );  
+            var y = Math.round( Math.random() * (maxScope-1));
+            foodPointer = x+"-"+y;
+            
+            setFood(foodPointer);
+        }
+        
+        //step7: 画出食物
+        function setFood(id){
+            document.getElementById(id).style.backgroundColor="#b20000";
+        }
+        
+        //step9：蛇的移动
+        function snakeMove(){
+            //snakeBody[0]  5-4
+            var arr = snakeBody[0].split('-');  
+            switch(nowDirection){
+                case 'left':   
+                    //_x  _y是蛇下一步将要运行到的坐标
+                    var _x = arr[0];
+                    var _y = parseInt(arr[1]) -1;
+                    break;
+                case 'right':
+                    var _x = arr[0];
+                    var _y = parseInt(arr[1]) +1;
+                    break;
+                case 'up':
+                    var _x = parseInt(arr[0])-1;
+                    var _y = arr[1];
+                    break;
+                case 'down':
+                    var _x = parseInt(arr[0])+1;
+                    var _y = arr[1];
+                    break;
+            }
+            //step12:判断食物是否吃到  var foodPointer  x-y
+            if(foodPointer == _x+"-"+_y){
+                snakeBody.unshift(_x+"-"+_y);
+                setSnake(snakeBody[0]);
+                
+                initFood(); //产生新的食物
+            }else{
+                snakeBody.unshift(_x+"-"+_y);  //将蛇下一步运行的坐标存储到数组的最开始，也就是下标[0]的位置
+            
+                setSnake(snakeBody[0]);  //画出下一步运行的蛇
+                resetSnake(snakeBody.pop());   //pop()方法获得值，并且删除。获得之前的旧坐标，擦掉td，最后从数组删除旧坐标
+            }
+        }
+        
+        //step11:改变方向
+        function snakeDir(){
+            switch(event.keyCode){
+                case 37:
+                    if(nowDirection!='right'){
+                        nowDirection='left';
+                    }
+                    break;
+                case 38:
+                    if(nowDirection !='down'){
+                        nowDirection='up';
+                    }
+                    break;
+                case 39:
+                    if(nowDirection!='left'){
+                        nowDirection='right';
+                    }
+                    break;
+                case 40:
+                    if(nowDirection!='up'){
+                        nowDirection='down';
+                    }
+                    break;
+            }
+        }
+    </script>
+    <style type="text/css">
+        table,td{ border:1px solid #9a9a9a; }
+        td{ width:10px;height:10px;}
+    </style>
+</head>
+<body onload="init()" onkeydown="snakeDir()">
+    <div id="page">
+        
+    </div>
+</body>
+</html>

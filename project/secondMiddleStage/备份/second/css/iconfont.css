@@ -1,0 +1,26 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../fonts/iconfont.eot?t=1476756209");
+  /* IE9*/
+  src: url("../fonts/iconfont.eot?t=1476756209#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff?t=1476756209") format("woff"), url("../fonts/iconfont.ttf?t=1476756209") format("truetype"), url("../fonts/iconfont.svg?t=1476756209#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-birdxiaoniao:before {
+  content: "\e736"; }
+
+.icon-pinterest:before {
+  content: "\e61c"; }
+
+.icon-instagram:before {
+  content: "\e68a"; }
+
+/*# sourceMappingURL=iconfont.css.map */
+
+/*# sourceMappingURL=iconfont.css.map */

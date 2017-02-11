@@ -1,0 +1,112 @@
+//@import 'amazeui';
+$bgColor:#f1f1f1;//背景颜色
+$textColor:#333;//字体颜色
+*{margin: 0;padding: 0;}
+.clearfix:after{content: '';height: 0;visibility: hidden;display: block;clear: both;}
+.clearfix{zoom: 1;}
+.fl{float: left;}
+.fr{float: right;}
+
+@border-left{
+    border-left: 1px solid ;
+}
+.navbar{height: 35px;background: $bgColor;}
+.navbar{
+    box-sizing: border-box;
+    padding: 0 6rem;
+    ul{
+        list-style: none;
+        
+        li{
+            margin-right: 2rem;
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+               color: $textColor;
+               text-decoration: none;
+               line-height: 35px; 
+               font-size: 0.8rem;
+            }
+        }
+    }
+}
+.logo{
+    box-sizing: border-box;
+    padding: 0 6rem!important;
+    
+}
+.content{
+    position: relative;
+    height: 30rem;
+    img{
+        width: 80%;
+        height: auto;
+    }
+    .login-block{
+        height: 25rem;
+        width: 25rem;
+        background: #fff;
+        position: absolute;
+        top: 2.5rem;
+        right: 2.5rem;
+        padding: 1rem;
+        .login-body{
+            padding: 2rem;
+            form{
+                .sub{
+                    display: inline-block;
+                    border: 0;
+                    width: 100%;
+                    height: 2rem;
+                    line-height: 2rem;
+                    background: #F27D00;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+footer{
+    cursor: pointer;
+    color: #999;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.8);
+    padding: 1rem;
+    font-family: helvetica;
+    .foot-top{
+     padding: 1rem;
+        ul{
+            list-style: none;
+            .divise-line{
+                background: url(../img/divise_line.jpg) right top repeat-y;
+                width: 12rem;
+            }
+            .relation{
+                text-align: center;
+            }
+            li{
+                padding: 1rem;
+                
+                dl{
+                    dt{text-align: center;}
+                    dd{
+                        
+                    }
+                }
+                .blog{
+                   padding: 1rem; 
+                   dl{
+                       margin-bottom: 50px;
+                   }
+                }
+            }
+        }
+    }
+    .foot-bottom{
+        padding: 1rem;
+        text-align: center;
+        background: url(../img/line_bg.jpg) repeat-x;
+    }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<link rel="stylesheet" type="text/css" href="css/loginIconfont.css" />
+	</head>
+
+	<body style="background: #F5F5F5;">
+		<div class="navbar clearfix">
+			<div class="fl">
+				<ul>
+					<li class="fl">
+						<a href="#">请登录</a>
+					</li>
+					<li class="fl">
+						<a href="register.html">免费注册</a>
+					</li>
+				</ul>
+			</div>
+			<div class="fr">
+				<ul>
+					<li class="fl">
+						<a href="index.html">返回商城首页</a>
+					</li>
+					<li class="fl">
+						<a href="admin.html">我是商家</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="logo" style="background: #fff;">
+			<img src="img/title.jpg" />
+			<div class="svg">
+				<svg version="1.1" id="draw1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px" height="50px" viewBox="0 0 180 50" style="enable-background:new 0 0 180 50;" xml:space="preserve">
+					<g>
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M20.076,21.692h10.359v0.422H20.076V21.692z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M31.794,22.349v-0.609l5.438-4.219l5.156,4.313v0.609
+					l-5.156-4.359L31.794,22.349z M37.466,19.349v8.438h-0.469v-8.438H37.466z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M45.951,26.099l3.797,0.609l2.766-2.484h-6.938l0.891-2.344
+					h-2.531v-0.422h2.719l0.656-1.781h-2.906v-0.422h3.094l0.609-1.594h0.516l-0.609,1.594h5.766v0.422h-5.953l-0.703,1.781h7.125
+					v0.422h-7.266l-0.75,1.922h7.359l-3.281,3l1.5,0.234v0.422l-5.859-0.938V26.099z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M57.388,17.802l-1.266,4.547h-0.469l1.266-4.547H57.388z
+					 M57.013,21.364v6.141h-0.469v-6.141H57.013z M58.326,22.536h1.359v-2.484h-2.016V19.63h2.016v-1.828h0.469v1.828h2.063v0.422
+					h-2.063v2.484h1.547v4.781h-3.375V22.536z M58.794,26.896h2.438v-3.938h-2.438V26.896z M63.623,20.849l0.797,2.109l1.359-3.703
+					h-2.484l-0.797,3.188h-0.469l1.172-4.641h0.469l-0.281,1.031h3.234v0.422h-0.328l-1.594,4.219l1.594,4.031h-0.469l-1.406-3.516
+					l-1.359,3.516h-0.516l1.594-4.031l-1.031-2.625H63.623z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M73.326,17.661v3.047h4.359v0.422h-4.359v5.813h4.969v0.422
+					H68.029v-0.422h4.828V21.13h-4.313v-0.422h4.313v-3.047H73.326z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M79.654,26.521l1.219-0.563v-5.063h-1.219v-0.422h1.219v-2.484
+					h0.469v2.484h1.313v0.422h-1.313v4.875l1.359-0.609v0.422l-3.047,1.359V26.521z M90.201,25.161l-0.141,2.344h-6.469v-6.141
+					l-0.984,0.188v-0.469l0.984-0.188v-2.484h0.469v2.391l2.344-0.469v-2.531h0.469v2.438l3.234-0.656l-0.375,4.5h-1.594l-0.375-0.422
+					h1.5l0.281-3.516l-2.672,0.563v5.156h-0.469v-5.063l-2.344,0.422v5.859h5.531l0.141-2.297L90.201,25.161z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M92.92,27.036l0.516-0.469v-4.875h-1.453v-0.422h1.922v4.922
+					l1.266-1.078v0.563l-2.25,1.969V27.036z M94.748,20.427l-1.875-2.109v-0.656l1.875,2.109V20.427z M99.014,22.489l-3.563,5.016
+					h-0.563l3.656-5.156l0.047-4.5h0.469L99.014,22.489z M99.482,23.005l3.141,4.5h-0.563l-3.141-4.5H99.482z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M104.029,21.739h-0.469l2.672-3.984l2.625,3.891h-0.516
+					l-2.109-3.141L104.029,21.739z M104.404,26.192l1.688,0.516l1.641-3.234h-3.75v-0.375h4.453l-1.922,3.703l1.125,0.328v0.422
+					l-3.234-0.938V26.192z M105.811,20.38l1.125,1.875h-0.469l-1.125-1.875H105.811z M114.576,18.036v0.422h-5.672v-0.422H114.576z
+					 M111.482,25.161v-3.891h0.469v4.078l-2.906,2.25v-0.516L111.482,25.161z M114.154,19.817v5.484h-0.422v-5.109h-3.984v5.203h-0.469
+					v-5.578H114.154z M111.717,19.817h-0.469l0.234-1.359h0.469L111.717,19.817z M111.998,25.911v-0.563l2.391,1.688v0.563
+					L111.998,25.911z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M117.389,18.786l0.656-0.891h0.516l-0.656,0.891h2.156v8.766
+					h-3.891v-8.766H117.389z M116.639,22.583h2.953v-3.375h-2.953V22.583z M119.592,23.005h-2.953v4.125h2.953V23.005z M125.92,27.552
+					h-3l-0.328-0.422h2.859l0.141-8.016h-3.797l-0.844,1.875h-0.516l1.453-3.141h0.516l-0.422,0.844h4.078L125.92,27.552z
+					 M123.67,24.177l-0.938-3.094h-0.516l0.938,3.094H123.67z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M133.42,18.739v4.969h4.828v0.422h-4.828v3.75h-0.469v-3.75
+					h-4.922v-0.422h4.922v-4.969h-4.406v-0.422h9.234v0.422H133.42z M129.529,19.677l2.156,3.375h-0.516l-2.156-3.375H129.529z
+					 M136.748,19.677l-2.156,3.375h0.563l2.156-3.375H136.748z" />
+						<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M148.326,19.208l1.5,2.297h-9.422l3-3.75h0.563l-2.625,3.328
+					h7.547l-1.125-1.875H148.326z M149.357,23.474v3.703v0.422h-8.344v-0.422v-3.703v-0.422h8.344V23.474z M148.889,27.177v-3.703
+					h-7.406v3.703H148.889z" />
+					</g>
+				</svg>
+			</div>
+		</div>
+		<div class="content clearfix">
+			<img src="img/loginbg.jpg" style="width: 60%;" class="fl" />
+			<div class="fr login-block">
+				<div style="border-bottom: 1px solid #eee;padding-bottom: 1rem;">
+					<i style="font-size: 1rem;font-family: inherit;font-style: normal;">登录兴唐家园</i>
+				</div>
+				<div class="login-body">
+					<form action="" method="post">
+						<label for="user">用户名：</label>
+						<input id="user" style="width: 16rem; height: 1.5rem;margin-bottom: 1rem;" placeholder="用户名只能由英文组成" /><br />
+						<p id="txt1" style="margin-left:3rem ;height: 2rem;"></p>
+						<label for="password">密&nbsp;码：</label>
+						<input id="password" style="width: 16rem; height: 1.5rem;margin-bottom: 2rem;" placeholder="请输入密码"/>
+						<p id="txt2" style="margin-left:3rem ;height: 2rem;"></p>
+						<div style="margin-bottom: 1.5rem;">
+							<ul class="clearfix" style="list-style: none;">
+								<li class="fl"><small style="color: #999;left: 2rem;cursor: pointer;">忘记密码</small></li>
+								<li class="fr"><small style="color: #999;right: 2rem;cursor: pointer;">立即注册</small></li>
+							</ul>
+						</div>
+						<input type="button" class="sub" value="登录" id="log"/>
+						<!--<p id="txt3" style="margin-left:3rem ;height: 2rem;"></p>-->
+					</form>
+					<div style="margin-top: 1rem;font-size: 1rem;">
+						使用合作网站账号登录：
+					</div>
+					<div style="border-top: 1px solid #eee;padding: 1rem;margin-top: 1rem;">
+						<ul class="clearfix" style="color: #de7301;list-style: none;">
+							<li class="fl"><i style="display: inline-block; width: 2rem;height: 2rem;background: url(img/login_pic.png) no-repeat;background-position: 0 0;margin-right: 2rem;margin-left: 5rem;"></i></li>
+							<li class="fl"><i style="display: inline-block; width: 2rem;height: 2rem;background: url(img/login_pic.png) no-repeat;background-position: -64px 0;margin-right: 2rem;"></i></li>
+							<li class="fl"><i style="display: inline-block; width: 2rem;height: 2rem;background: url(img/login_pic.png) no-repeat;background-position: -32px 0;"></i></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="foot-top">
+				<ul class="clearfix">
+					<li class="fl divise-line" style="height: 10rem;">
+						<dl>
+							<dt>家园栏目</dt>
+							<dd>
+								<ul class="clearfix">
+									<li class="fl">土地认领</li>
+									<li class="fl">专题活动</li>
+									<li class="fl">资讯动态</li>
+									<li class="fl">百科知识</li>
+									<li class="fl">帮助中心</li>
+									<li class="fl">招商加盟</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl divise-line" style="height: 10rem;">
+						<dl>
+							<dt>关于我们</dt>
+							<dd>
+								<ul class="clearfix">
+									<li class="fl">公司简介</li>
+									<li class="fl">版权申明</li>
+									<li class="fl">平台介绍</li>
+									<li class="fl">联系我们</li>
+									<li class="fl">资质荣誉</li>
+									<li class="fl">加入我们</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl divise-line relation" style="width: 15rem;height: 10rem;">
+						<dl>
+							<dt>联系我们</dt>
+							<dd>
+								<ul>
+									<li style="padding: 0.2rem;margin-top: 0.5rem;">土地认领</li>
+									<li style="padding: 0.2rem;"><span style="color: #eee;font-size: 2rem;">0357-6150888</span></li>
+									<li style="padding: 0.2rem;"><small>(早08:00-晚18:00)</small></li>
+									<li style="padding: 0.5rem;"><img src="img/zxkf.png" /></li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl divise-line blog" style="width: 8rem;height: 10rem;">
+						<div style="margin-bottom: 1rem;">
+							<img src="img/blog_bg.png" align="absmiddle" style="margin-right: 0.5rem;" />新浪微博
+						</div>
+						<div style="margin-bottom: 1rem;">
+							<img src="img/blog_bg.png" align="absmiddle" style="margin-right: 0.5rem;" />腾讯微博
+						</div>
+						<div style="margin-bottom: 1rem;">
+							<img src="img/blog_bg.png" align="absmiddle" style="margin-right: 0.5rem;" />QQ空间
+						</div>
+					</li>
+					<li class="fl" style="height: 10rem;text-align: center;">
+						<div style="display: inline-block;margin-right: 1rem;">
+							<img src="img/ewm.jpg" style="width: 8rem;height: 8rem;margin-bottom: 0.5rem;" />
+							<p>兴唐家园微信公众号</p>
+						</div>
+						<div style="display: inline-block;">
+							<img src="img/blog.png" style="width: 8rem;height: 8rem;margin-bottom: 0.5rem;" />
+							<p>微博公众平台</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-bottom">
+				晋© 2014 Copyright by sxxtjy
+			</div>
+		</div>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vivus.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

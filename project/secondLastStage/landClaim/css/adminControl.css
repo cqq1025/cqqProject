@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+/*topBar*/
+.topBar {
+	width: 100%;
+	height: 1rem;
+	background: #75AE0A;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+.information {
+	height: 7rem;
+	width: 100%;
+	padding: 1% 10%;
+	position: fixed;
+	top: 1rem;
+	background: #D2EAA0;
+	z-index: 9998;
+}
+
+.nav-box {
+	position: fixed;
+	top: 8rem;
+	/*background: #eee;*/
+}
+
+.underline {
+	color: #f00;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.scroll-content {
+	background: #BFD750;
+	border: 1px solid #eee;
+	/*margin-top: 8rem;*/
+}
+
+table th {
+	text-align: center;
+}

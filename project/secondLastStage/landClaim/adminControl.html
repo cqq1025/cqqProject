@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理系统</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--针对双核浏览器启用“急速模式”渲染-->
+		<meta name="renderer" content="webkit">
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/adminControl.css" />
+	</head>
+
+	<body style="background: #D2EAA0;height: 550px;position: relative;" data-spy="scroll" data-target="#nav">
+		<div class="topBar"></div>
+		<div class="information" style="background: #D2EAA0;border-bottom: 1px solid #eee;">
+			<div class="row">
+				<div class="pull-left">
+					<img src="img/title.png" />
+				</div>
+				<div class="pull-right">
+					<img src="img/user1.png" class="img-circle" style="width: 5rem;height: 5rem;border: 1px solid #999;" align="absmiddle" /><span style="margin-left: 2rem;"></span>退出
+				</div>
+			</div>
+		</div>
+		<div class="row" style="padding-top: 8rem;">
+			<div class="col-lg-3">
+				<div class="nav-box" id="nav" style="height: 100%;">
+					<div class="row" style="padding-left: 1.5rem;padding-top: 1rem;">
+						<a class="btn btn-default"><span class="glyphicon glyphicon-home"></span></a>
+						<a class="btn btn-danger"><span class="glyphicon glyphicon-star-empty"></span></a>
+						<a class="btn btn-success" style="position: relative;"><span class="glyphicon glyphicon-volume-up"></span><span class="badge" style="color: #f00;position: absolute;top: -5px;right: -5px;">4</span></a>
+						<a class="btn btn-info"><span class="glyphicon glyphicon-cog"></span></a>
+					</div>
+					<ul class="nav nav-pills nav-stacked">
+						<li class="active" style="padding-right: 0;">
+							<a class="text-left" href="#adminUser"><span class="glyphicon glyphicon-lock" style="margin-right: 1rem;"></span>管理员</a>
+						</li>
+						<li style="padding-right: 0;">
+							<a class="text-left" href="#userMag"><span class="glyphicon glyphicon-user" style="margin-right: 1rem;"></span>账号管理</a>
+						</li>
+						<li class="collapsed navbar-collapse" data-toggle="collapse" data-target="#manage" style="padding-left: 0;padding-right: 0;">
+							<a class="text-left" href="#solidMag"><span class="glyphicon glyphicon-tasks" style="margin-right: 1rem;"></span>土地管理<span class="glyphicon glyphicon-chevron-right pull-right" style="margin-left: 4rem;"></span></a>
+							<div class="collapse" id="manage">
+								<ul class='nav navbar-nav'>
+									<li>
+										<a href="#tdsl" class="text-left" style="color: #F37C0D;">土地数量</a>
+									</li><br />
+									<li>
+										<a href="" class="text-left" style="color: #F37C0D;">租用现状</a>
+									</li><br />
+								</ul>
+							</div>
+						</li>
+						<li class="collapsed navbar-collapse" data-toggle="collapse" data-target="#cjjl1" style="padding-left: 0;padding-right: 0;">
+							<a class="text-left" href="#cjjl"><span class="glyphicon glyphicon-tasks" style="margin-right: 1rem;"></span>成交记录<span class="glyphicon glyphicon-chevron-right pull-right" style="margin-left: 4rem;"></span></a>
+							<div class="collapse" id="cjjl1">
+								<ul class='nav navbar-nav'>
+									<li>
+										<a href="#fbfw" style="color: #F37C0D;">近一月记录</a>
+									</li><br />
+									<li>
+										<a href="#zyxz" style="color: #F37C0D;">近两月记录</a>
+									</li><br />
+									<li>
+										<a href="#kx" style="color: #F37C0D;">近半年记录</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="collapsed navbar-collapse" data-toggle="collapse" data-target="#zfgll" style="padding-left: 0;padding-right: 0;">
+							<a class="text-left" href="#zfgl"><span class="glyphicon glyphicon-shopping-cart" style="margin-right: 1rem;"></span>支付管理<span class="glyphicon glyphicon-chevron-right pull-right" style="margin-left: 4rem;"></span></a>
+							<div class="collapse" id="zfgll">
+								<ul class='nav navbar-nav'>
+									<li>
+										<a href="#fbfw" style="color: #F37C0D;">支付工具</a>
+									</li><br />
+									<li>
+										<a href="#zyxz" style="color: #F37C0D;">支付记录</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="collapsed navbar-collapse" data-toggle="collapse" data-target="#xtgl1" style="padding-left: 0;padding-right: 0;">
+							<a class="text-left" href="#xtgl"><span class="glyphicon glyphicon-wrench" style="margin-right: 1rem;"></span>系统管理<span class="glyphicon glyphicon-chevron-right pull-right" style="margin-left: 4rem;"></span></a>
+							<div class="collapse" id="xtgl1">
+								<ul class='nav navbar-nav'>
+									<li>
+										<a href="#fbfw" style="color: #F37C0D;">意见反馈</a>
+									</li><br />
+									<li>
+										<a href="#zyxz" style="color: #F37C0D;">关于我们</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<!--<li>
+							<a class="text-left" href="#zxxx">最新消息<span class="badge" style="color: #f00;">20</span></a>
+						</li>-->
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-9 col-lg-offset-2 scroll-content">
+				<div class="row" style="margin-top: 1rem;padding: 1rem;" id="adminUser">
+					<ol class="breadcrumb" style="background: #D2EAA0;">
+					  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+					  <li class="active">管理员</li>
+					</ol>
+					<div class="col-lg-4 text-center" >
+					  	<span class="col-lg-4" style="display: inline-block;height: 10rem;background: #A7E0F6;line-height: 10rem;">
+					  		<i class="glyphicon glyphicon-user" style="font-size: 3rem;color: #fff;"></i>
+					  	</span>
+					  	<span class="col-lg-8" style="display: inline-block;height: 10rem;background: #fff;">
+					  		<h5 style="line-height:5rem;font-size: 3rem;">345</h5>
+					  		<p>商城用户</p>
+					  	</span>
+					</div>
+					<div class="col-lg-4 text-center">
+					  	<span class="col-lg-4" style="display: inline-block;height: 10rem;background: #A7E0F6;line-height: 10rem;">
+					  		<i class="glyphicon glyphicon-list-alt" style="font-size: 3rem;color: #fff;"></i>
+					  	</span>
+					  	<span class="col-lg-8" style="display: inline-block;height: 10rem;background: #fff;">
+					  		<h5 style="line-height:5rem;font-size: 3rem;">222</h5>
+					  		<p>分销记录</p>
+					  	</span>
+					</div>
+					<div class="col-lg-4 text-center">
+					  	<span class="col-lg-4" style="display: inline-block;height: 10rem;background: #A7E0F6;line-height: 10rem;">
+					  		<i class="glyphicon glyphicon-folder-close" style="font-size: 3rem;color: #fff;"></i>
+					  	</span>
+					  	<span class="col-lg-8" style="display: inline-block;height: 10rem;background: #fff;">
+					  		<h5 style="line-height:5rem;font-size: 3rem;">522</h5>
+					  		<p>商城订单</p>
+					  	</span>
+					</div>
+					<div class="table-responsive col-lg-8 col-lg-offset-2" style="margin-top: 1rem;">
+						<!-- Single button -->
+						<div class="btn-group">
+						  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+						    批量操作<span class="caret"></span>
+						  </button>
+						  <ul class="dropdown-menu" role="menu">
+						    <li><a href="#">批量删除</a></li>
+						    <li class="divider"></li>
+						    <li><a href="#">批量编辑</a></li>
+						  </ul>
+						</div>
+						<table class="table table-hover text-center table-striped" style="background: #fff;">
+							<caption style="font-size: 2rem;color: #fff;margin-bottom: 1rem;">管理员账号管理</caption>
+							<tr class="info">
+								<th></th>
+								<th class="text-center">用户名</th>
+								<th class="text-center">密码</th>
+								<th class="text-center">注册时间</th>
+								<th class="text-center">权限</th>
+								<th class="text-center">编辑</th>
+								<th class="text-center">删除</th>
+							</tr>
+							<tr>
+								<td></td>
+								<td>admin</td>
+								<td>admin</td>
+								<td>2015-12-25</td>
+								<td class="underline">权限</td>
+								<td class="underline">编辑</td>
+								<td class="underline"></td>
+							</tr>
+							<tr>
+								<td><input type="radio" /></td>
+								<td>cqq</td>
+								<td>cqq</td>
+								<td>2016-01-05</td>
+								<td class="underline">权限</td>
+								<td class="underline">编辑</td>
+								<td class="underline">删除</td>
+							</tr>
+							<tr>
+								<td><input type="radio" /></td>
+								<td>wxm</td>
+								<td>wxm</td>
+								<td>2016-01-05</td>
+								<td class="underline">权限</td>
+								<td class="underline">编辑</td>
+								<td class="underline">删除</td>
+							</tr>
+							<tr>
+								<td><input type="radio" /></td>
+								<td>hmx</td>
+								<td>hmx</td>
+								<td>2016-01-06</td>
+								<td class="underline">权限</td>
+								<td class="underline">编辑</td>
+								<td class="underline">删除</td>
+							</tr>
+							<tr>
+								<td>+</td>
+								<td>*</td>
+								<td>*</td>
+								<td>*</td>
+								<td>*</td>
+								<td>*</td>
+								<td>*</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+
+				<ol class="breadcrumb" style="background: #D2EAA0;">
+				  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+				  <li class="active">用户账号管理</li>
+				</ol>
+				
+				
+				<div class="row">
+					<div class="col-lg-2 col-lg-offset-1" style="padding: 2rem 0 2rem 2rem;">
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #A7E0F6;" >
+							全部(230)
+						</div>
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #fff;border-bottom: 1px solid #eee;">
+							<span class="glyphicon glyphicon-star" style="color: #a00;margin-right: 1rem;"></span> 普通会员(85)
+						</div>
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #fff;border-bottom: 1px solid #eee;">
+							<span class="glyphicon glyphicon-star" style="color: #b00;margin-right: 1rem;"></span>铁牌会员(30)
+						</div>
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #fff;border-bottom: 1px solid #eee;">
+							<span class="glyphicon glyphicon-star" style="color: #c00;margin-right: 1rem;"></span>铜牌会员(22)
+						</div>
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #fff;border-bottom: 1px solid #eee;">
+							<span class="glyphicon glyphicon-star" style="color: #d00;margin-right: 1rem;"></span>金牌会员(73)
+						</div>
+						<div class="text-center" style="height: 5rem;line-height: 5rem;background: #fff;">
+							<span class="glyphicon glyphicon-star" style="color: #e00;margin-right: 1rem;"></span>超级VIP(20)
+						</div>
+					</div>
+					<div class="col-lg-9" style="padding: 3rem 2rem 3rem 0;">
+						
+						<!--<div class="row text-center" style="height: 5rem;line-height: 5rem;margin-left: 0.5rem;font-size: ;" >
+							等级统计
+						</div>-->
+						<div class="row">
+							<div id="tj" style="width: 100%;height:30rem;padding-bottom: 8rem;"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row" style="margin-top: 1rem;" id="userMag">
+					<div class="table-responsive col-lg-8 col-lg-offset-2">
+						<table class="table table-hover text-center">
+							<caption style="font-size: 2rem;color: #fff;margin-bottom: 1rem;">账号管理</caption>
+							<tr class="info">
+								<th>用户名</th>
+								<th>密码</th>
+								<th>注册时间</th>
+								<th>所在地区</th>
+								<th>个人信息</th>
+								<th>等级</th>
+								<th>标记</th>
+							</tr>
+							<tr class="danger">
+								<td>IT1025</td>
+								<td>admin</td>
+								<td>2015-12-25</td>
+								<td>北京</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="danger">
+								<td>16_18235</td>
+								<td>cqq</td>
+								<td>2016-01-05</td>
+								<td>西安</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="danger">
+								<td>@_518</td>
+								<td>admin</td>
+								<td>2015-12-25</td>
+								<td>北京</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="danger">
+								<td>cqq</td>
+								<td>cqq</td>
+								<td>2016-01-05</td>
+								<td>西安</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="danger">
+								<td>xkl</td>
+								<td>xkl</td>
+								<td>2015-12-25</td>
+								<td>北京</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"> </span></td>
+							</tr>
+							<tr class="danger">
+								<td>ltt</td>
+								<td>ltt</td>
+								<td>2016-01-05</td>
+								<td>西安</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="success">
+								<td>hym</td>
+								<td>hym</td>
+								<td>2015-12-25</td>
+								<td>北京</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="success">
+								<td>lyj</td>
+								<td>lyj</td>
+								<td>2016-01-05</td>
+								<td>西安</td>
+								<td class="underline">编辑</td>
+								<td style="color: #f00;">VIP</td>
+								<td style="color: #f00;"><span class="glyphicon glyphicon-star"></span></td>
+							</tr>
+							<tr class="success">
+								<td>wxm</td>
+								<td>wxm</td>
+								<td>2016-01-05</td>
+								<td>哈尔滨</td>
+								<td class="underline">编辑</td>
+								<td>普通会员</td>
+								<td class="underline">标记</td>
+							</tr>
+							<tr class="success">
+								<td>hmx</td>
+								<td>hmx</td>
+								<td>2016-01-06</td>
+								<td>大连</td>
+								<td class="underline">编辑</td>
+								<td>普通会员</td>
+								<td class="underline">标记</td>
+							</tr>
+							
+						</table>
+					</div>
+				</div>
+				<ol class="breadcrumb" style="background: #D2EAA0;">
+				  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+				  <li class="active">土地管理</li>
+				</ol>
+				<div class="row" style="margin-top: 2rem;">
+					<h3 style="padding: 2rem;">各土地所占比例</h3>
+					<div class="col-lg-3">
+						<div id="main1" style="width:100%;height: 10rem;padding:0 20px;"></div>
+					</div>
+					<div class="col-lg-3">
+						<div id="main2" style="width:100%;height: 10rem;padding:0 20px;"></div>
+					</div>
+					<div class="col-lg-3">
+						<div id="main3" style="width:100%;height: 10rem;padding:0 20px;"></div>
+					</div>
+					<div class="col-lg-3">
+						<div id="main4" style="width:100%;height: 10rem;padding:0 20px;"></div>
+					</div>
+				</div>
+				<div class="row" id="solidMag" style="margin-top: 3rem;">
+					<div class="row" style="height: 30rem;">
+						<div class="col-lg-5">
+							<div class="panel panel-default col-lg-10 col-lg-offset-1" style="margin-top: 2rem;">
+								<div class="panel-heading ">
+									土地种类
+								</div>
+								<div class="panel-body">
+									<table class="table table-bordered">
+										<tr>
+											<th>玉米地</th>
+											<td>30<span class="glyphicon glyphicon-pencil pull-right"></span></td>
+											<td style="text-align: center;color: #aaa;"><span class="glyphicon glyphicon-remove"></span></td>
+										</tr>
+										<tr>
+											<th>小麦地</th>
+											<td>20<span class="glyphicon glyphicon-pencil pull-right"></span></td>
+											<td style="text-align: center;color: #aaa;"><span class="glyphicon glyphicon-remove"></span></td>
+										</tr>
+										<tr>
+											<th>蔬菜</th>
+											<td>36<span class="glyphicon glyphicon-pencil pull-right"></span></td>
+											<td style="text-align: center;color: #aaa;"><span class="glyphicon glyphicon-remove"></span></td>
+										</tr>
+										<tr>
+											<th>果类</th>
+											<td>10<span class="glyphicon glyphicon-pencil pull-right"></span></td>
+											<td style="text-align: center;color: #aaa;"><span class="glyphicon glyphicon-remove"></span></td>
+										</tr>
+										<tr>
+											<th>特产</th>
+											<td>10<span class="glyphicon glyphicon-pencil pull-right"></span></td>
+											<td style="text-align: center;color: #aaa;"><span class="glyphicon glyphicon-remove"></span></td>
+										</tr>
+										<tr>
+											<th style="color: #aaa;text-align: center;"><span class="glyphicon glyphicon-plus"></span></th>
+											<td></td>
+											<td></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7">
+							<div id="main" style="width: 600px;height:400px;margin: 1rem auto;"></div>
+						</div>
+					</div>
+
+				</div>
+				<div id="cjjl">
+					<ol class="breadcrumb" style="background: #D2EAA0;">
+					  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+					  <li class="active">成交记录</li>
+					</ol>
+					<form class="form-inline pull-right" role="form">
+					  <div class="form-group has-success has-feedback">
+					    <input type="text" class="form-control" id="inputSuccess4" placeholder="订单号">
+					    <span class="glyphicon glyphicon-search"></span>
+					  </div>
+					</form>
+					<div class="row" style="padding: 3rem;">
+						<div class="pull-left">
+							<div class="btn btn-danger">全部订单</div>
+							<div class="btn btn-success">当月订单</div>
+							<div class="btn btn-success">当天订单</div>
+						</div>
+						<div class="pull-right" style="margin-top: 0.5rem;">
+							<span style="color: #999;">共：</span>2312<span style="color: #999;"> 笔</span>
+						</div>
+					</div>
+					<div class="">
+						每页显示条数：
+						<select style="color: #d00;">
+							<option selected="selected">5</option>
+							<option>6</option>
+							<option>7</option>
+						</select>条
+					</div>
+					<table class="table table-bordered" style="margin-top: 1rem;">
+						<tr style="background: #eee;">
+							<th>序号</th>
+							<th>订单编号</th>
+							<th>成交时间</th>
+							<th>成交金额</th>
+							<th>状态</th>
+						</tr>
+						<tr style="text-align: center;">
+							<td>1</td>
+							<td>HD2016061200456787</td>
+							<td>2015-6-12</td>
+							<td>800</td>
+							<td>成功</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td>2</td>
+							<td>HD2016061200456787</td>
+							<td>2016-1-20</td>
+							<td>600</td>
+							<td>成功</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td>3</td>
+							<td>HD2016061200456787</td>
+							<td>2016-3-12</td>
+							<td>1000</td>
+							<td>成功</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td>4</td>
+							<td>HD2016061200456787</td>
+							<td>2016-5-20</td>
+							<td>800</td>
+							<td>成功</td>
+						</tr>
+						<tr style="text-align: center;">
+							<td>5</td>
+							<td>HD2016061200456787</td>
+							<td>2016-8-12</td>
+							<td>500</td>
+							<td>成功</td>
+						</tr>
+					</table>
+					<nav>
+						<ul class="pagination pull-right" style="margin-top: 1rem;">
+							<li class="disabled">
+								<a href="#">上一页</a>
+							</li>
+							<li class="active">
+								<a href="#">1</a>
+							</li>
+							<li>
+								<a href="#">下一页</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div id="zfgl" style="margin-top: 8rem;">
+					<ol class="breadcrumb" style="background: #D2EAA0;">
+					  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+					  <li class="active">支付管理</li>
+					</ol>
+					<div>
+						<div class="tip" style="margin-bottom: 2rem;">
+							<input class="form-control has-error" style="background: #BFD750;" id="disabledInput" type="text" placeholder="该支付方式启用并不能正常使用，需要开通支付功能才能使用相应的支付方式" disabled>
+						</div>
+						<button class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> 添加支付方式</button>
+					</div>
+					<div class="row">
+						<div class="col-lg-4" style="box-sizing: border-box;padding: 3rem;">
+							<div class="col-lg-12" style="background: #00A5E5;padding: 1rem 0;text-align: center;color: #fff;font-weight: 600;">
+								支付宝
+							</div>
+							<div class="col-lg-12" style="background: #fff;height: 10rem;border-bottom: 1px solid #eee;">
+								<img src="img/zhifb.jpg" style="width: 100%;" />
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding: 1rem;">
+								支付宝（中国）网络技术有限公司是国内领先的第三方支付平台，致力于提供“简单、安全、快速”的支付解决方法
+							</div>
+							<div class="col-lg-12 text-center" style=" background: #fff;padding: 1rem;border-top: 1px solid #eee;">
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox1" value="option1">启用
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox2" value="option2">关闭
+								</label>
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding-bottom: 1rem;">
+								<button class="btn btn-info" style="margin-left: 3rem;"><span class="glyphicon glyphicon-pencil" style="margin-right: 1rem;"></span>编辑</button>
+								<button class="btn btn-info" style="margin-right: 3rem;"><span class="glyphicon glyphicon-trash" style="margin-right: 1rem;"></span>删除</button>
+							</div>
+						</div>
+						<div class="col-lg-4" style="box-sizing: border-box;padding: 3rem;">
+							<div class="col-lg-12" style="background: #00A5E5;padding: 1rem 0;text-align: center;color: #fff;font-weight: 600;">
+								银联支付
+							</div>
+							<div class="col-lg-12" style="background: #fff;height: 10rem;border-bottom: 1px solid #eee;">
+								<img src="img/yinglian.jpg" style="width: 100%;" />
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding: 1rem;">
+								中国银联是中国银行卡联合组织，通过银联跨行交易清算系统，实现商业银行系统间的互联互通和资源共享
+							</div>
+							<div class="col-lg-12 text-center" style="background: #fff;padding: 1rem;border-top: 1px solid #eee;">
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox1" value="option1">启用
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox2" value="option2">关闭
+								</label>
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding-bottom: 1rem;">
+								<button style="margin-left: 3rem;" class="btn btn-info"><span class="glyphicon glyphicon-pencil" style="margin-right: 1rem;"></span>编辑</button>
+								<button style="margin-right: 3rem;" class="btn btn-info"><span class="glyphicon glyphicon-trash" style="margin-right: 1rem;"></span>删除</button>
+							</div>
+						</div>
+						<div class="col-lg-4" style="box-sizing: border-box;padding: 3rem;">
+							<div class="col-lg-12" style="background: #00A5E5;padding: 1rem 0;text-align: center;color: #fff;font-weight: 600;">
+								微信支付
+							</div>
+							<div class="col-lg-12" style="background: #fff;height: 10rem;border-bottom: 1px solid #eee;">
+								<img src="img/weixin.jpg" style="width: 100%;" />
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding: 1rem;">
+								微信支付是集成在微信客户端的支付功能，用户可以通过手机完成快速的支付流程。
+							</div>
+							<div class="col-lg-12 text-center" style="background: #fff;padding: 1rem;border-top: 1px solid #eee;">
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox1" value="option1">启用
+								</label>
+								<label class="checkbox-inline">
+								  <input type="checkbox" id="inlineCheckbox2" value="option2">关闭
+								</label>
+							</div>
+							<div class="col-lg-12" style="background: #fff;padding-bottom: 1rem;">
+								<button style="margin-left: 3rem;" class="btn btn-info"><span class="glyphicon glyphicon-pencil" style="margin-right: 1rem;"></span>编辑</button>
+								<button style="margin-right: 3rem;" class="btn btn-info"><span class="glyphicon glyphicon-trash" style="margin-right: 1rem;"></span>删除</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="xtgl" style="padding: 1rem;">
+					<ol class="breadcrumb" style="background: #D2EAA0;">
+					  <li><a href="#"><span class="glyphicon glyphicon-home" style="margin-right: 1rem;"></span>首页</a></li>
+					  <li class="active">系统管理</li>
+					</ol>
+					<div>
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#home" role="tab" data-toggle="tab">基本设置</a>
+							</li>
+							<li role="presentation">
+								<a href="#profile" role="tab" data-toggle="tab">消息通知<span class="badge" style="background: #f00;">4</span></a>
+							</li>
+							<!--<li role="presentation">
+								<a href="#messages" role="tab" data-toggle="tab">底部菜单</a>
+							</li>-->
+							<li role="presentation">
+								<a href="#settings" role="tab" data-toggle="tab">其他设置</a>
+							</li>
+						</ul>
+
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>网站名称</label>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>网站Logo</label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>网站名称</label>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="网站名称">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>网站Logo</label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputPassword3" placeholder="网站Logo">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label for="inputEmail3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>底部版权信息</label>
+										<div class="col-sm-9">
+											<input type="email" class="form-control" id="inputEmail3" placeholder="底部版权信息">
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputPassword3" class="col-sm-2 control-label"><span style="color: #f00;">*</span>备案号：</label>
+										<div class="col-sm-9">
+											<input type="password" class="form-control" id="inputPassword3" placeholder="备案号">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-sm-offset-2 col-sm-10">
+											<div class="checkbox">
+												<label>
+										          <input type="checkbox">确认
+										        </label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="text-center">
+											<button type="submit" class="btn btn-success" style="width: 20%;">提交</button>
+										</div>
+									</div>
+								</form>
+
+							</div>
+							<div role="tabpanel" class="tab-pane" id="profile">
+
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">消息1：<span style="color: #f00;">来自留言</span></h3>
+									</div>
+									<div class="panel-body">
+										老板，什么季节是种植绿豆的好时机？
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">消息2：<span style="color: #f00;">来自建议</span></h3>
+									</div>
+									<div class="panel-body">
+										个人感觉种类有点少，希望多开发其他种类
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										<h3 class="panel-title">消息3：<span style="color: #f00;">来自评论</span></h3>
+									</div>
+									<div class="panel-body">
+										这的土地真的很肥沃，环境也不错，来年夏天，带上家人一起去烧烤
+									</div>
+								</div>
+							</div>
+							<!--<div role="tabpanel" class="tab-pane" id="messages">
+
+							</div>-->
+							<div role="tabpanel" class="tab-pane" id="settings">
+								<label for="area"><span style="color: #f00;margin-right: 0.5rem;font-size: 2rem;">*</span>屏蔽词</label>
+								<textarea id="area" class="form-control" rows="5"></textarea>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div id="zxxx">
+					<div style="height: 200px;">
+						最新消息
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/adminControl.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$('.nav-pills').affix({
+				offset: {
+					top: 300,
+					bottom: 10
+				}
+			})
+			$('#myTab a').click(function(e) {
+				e.preventDefault()
+				$(this).tab('show')
+			})
+			$('#myTab a[href="#profile"]').tab('show') // Select tab by name
+			$('#myTab a:first').tab('show') // Select first tab
+			$('#myTab a:last').tab('show') // Select last tab
+			$('#myTab li:eq(2) a').tab('show') // Select third tab (0-indexed)
+		</script>
+	</body>
+
+</html>

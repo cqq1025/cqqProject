@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+.content{
+	position: absolute;
+	left: 1rem;
+	bottom: 10rem;
+}
+.swiper-slide i{
+	margin-bottom: 2rem;
+}
+.card-panel{
+	height: 4rem;
+}
+.foot{
+	position: fixed;
+	bottom: 1rem;
+	right: 2rem;
+}
+.radiu{
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	float: left;
+	margin-left: 1rem;
+}
+.set li{
+	padding: 0 1rem;
+	border-bottom: 1px solid #DEDEDE;
+}
+.title{
+	background: #eee;
+}
+.msg{
+	position: absolute;
+	top: 1rem;
+	right: 1rem; 
+	width: 2rem;
+	height: 1rem;
+	border-radius: 40%;
+	background: #f00;
+	text-align: center;
+	line-height: 1rem;
+}
+.download{
+	display: inline;
+	width: 100%;
+	height: 60%;
+	background: #fafafa;
+	text-align: center;
+}
+

@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both; }
+
+.clearfix {
+  zoom: 1; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+@border-left {
+  border-left: 1px solid; }
+.navbar {
+  height: 35px;
+  background: #f1f1f1; }
+
+.navbar {
+  box-sizing: border-box;
+  padding: 0 6rem; }
+  .navbar ul {
+    list-style: none; }
+    .navbar ul li {
+      margin-right: 2rem; }
+      .navbar ul li:last-child {
+        margin-right: 0; }
+      .navbar ul li a {
+        color: #333;
+        text-decoration: none;
+        line-height: 35px;
+        font-size: 0.8rem; }
+
+.logo {
+  box-sizing: border-box;
+  padding: 0 6rem !important; }
+
+.content {
+  position: relative;
+  height: 30rem; }
+  .content img {
+    width: 80%;
+    height: auto; }
+  .content .login-block {
+    height: 25rem;
+    width: 25rem;
+    background: #fff;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    padding: 1rem; }
+    .content .login-block .login-body {
+      padding: 2rem; }
+      .content .login-block .login-body form .sub {
+        display: inline-block;
+        border: 0;
+        width: 100%;
+        height: 2rem;
+        line-height: 2rem;
+        background: #F27D00;
+        color: #fff; }
+
+footer {
+  cursor: pointer;
+  color: #999;
+  font-size: 0.8rem;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem;
+  font-family: helvetica; }
+  footer .foot-top {
+    padding: 1rem; }
+    footer .foot-top ul {
+      list-style: none; }
+      footer .foot-top ul .divise-line {
+        background: url(../img/divise_line.jpg) right top repeat-y;
+        width: 12rem; }
+      footer .foot-top ul .relation {
+        text-align: center; }
+      footer .foot-top ul li {
+        padding: 1rem; }
+        footer .foot-top ul li dl dt {
+          text-align: center; }
+        footer .foot-top ul li .blog {
+          padding: 1rem; }
+          footer .foot-top ul li .blog dl {
+            margin-bottom: 50px; }
+  footer .foot-bottom {
+    padding: 1rem;
+    text-align: center;
+    background: url(../img/line_bg.jpg) repeat-x; }

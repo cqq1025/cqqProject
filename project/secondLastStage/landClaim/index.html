@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>兴唐家园土地认领平台</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!--针对双核浏览器启用“急速模式”渲染-->
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--[if lt IE 9]>
+		  <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="css/materialize.css" />
+		<link rel="stylesheet" type="text/css" href="css/icon.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body style="background: #fff;">
+		<div class="container">
+			<nav>
+				<div class="nav-wrapper" style="padding-top: 0.2rem;">
+					<a href="#collept" data-activates="mobile-demo" class="button-collapse hide-on-med-and-up"><i class="material-icons black-text">view_headline</i></a>
+					<img class="left responsive-img" src="img/title.jpg" style="margin-right: 2rem;" />
+					<div class="hide-on-small-and-down">
+						<div class="left">
+							<a href="#" class="left red-text list dropdown-button hide-on-small-and-down" style="border: 0!important;">兴唐首页</a>
+							<a href="#modal1" class="left hide-on-small-and-down black-text list modal-trigger" style="border: 0!important;">你来做主</a>
+							<div id="modal1" class="modal">
+								<div class="modal-content">
+									<h4 class="black-text">土地的表白</h4>
+									<p class="black-text">在这里你可以当家做主，通过租赁农民的土地，享受大自然给予的丰厚果实，当然你也可以足不出户，在线寻找属于你的私人管家，实时观看你的绿植动态，收获纯天然食物，夏天这里便是避暑的好去处了，与朋友来一场尽情的野炊吧,我们的草坪用来迎接你的婚礼</p>
+								</div>
+								<div class="modal-footer">
+									<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">取消</a>
+									<a href="secondPage.html" target="_blank" class=" modal-action modal-close waves-effect waves-green btn-flat">好的</a>
+								</div>
+							</div>
+							<a class="hide-on-small-and-down black-text list" href="food.html" target="_blank" style="border: 0!important;margin-right: 0;">家的味道</a>
+						</div>
+						<div class="right" style="margin-top: 1rem;">
+							<a href="login.html" target="_blank" class="btn-flat left center-align login">登录</a>
+							<a href="register.html" target="_blank" class="left red-text regist btn-flat center-align">注册</a>
+						</div>
+					</div>
+					<div class="side-nav" id="mobile-demo">
+							<a href="#" class="red-text list dropdown-button" style="border: 0!important;">兴唐首页</a>
+							<a href="#modal1" class="black-text list modal-trigger" style="border: 0!important;">你来做主</a>
+							<a class="black-text list" href="food.html" target="_blank" style="border: 0!important;margin-right: 0;">家的味道</a>
+							<a href="login.html" target="_blank" class="btn-flat left center-align login">登录</a>
+							<a href="regist.html" target="_blank" class="left red-text regist btn-flat center-align">注册</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="container" style="position: relative;height: 3rem;">
+			<svg style="position: absolute;left: 2rem;top: 0;" version="1.1" id="draw1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px" height="50px" viewBox="0 0 180 50" style="enable-background:new 0 0 180 50;" xml:space="preserve">
+				<g>
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M20.076,21.692h10.359v0.422H20.076V21.692z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M31.794,22.349v-0.609l5.438-4.219l5.156,4.313v0.609
+					l-5.156-4.359L31.794,22.349z M37.466,19.349v8.438h-0.469v-8.438H37.466z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M45.951,26.099l3.797,0.609l2.766-2.484h-6.938l0.891-2.344
+					h-2.531v-0.422h2.719l0.656-1.781h-2.906v-0.422h3.094l0.609-1.594h0.516l-0.609,1.594h5.766v0.422h-5.953l-0.703,1.781h7.125
+					v0.422h-7.266l-0.75,1.922h7.359l-3.281,3l1.5,0.234v0.422l-5.859-0.938V26.099z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M57.388,17.802l-1.266,4.547h-0.469l1.266-4.547H57.388z
+					 M57.013,21.364v6.141h-0.469v-6.141H57.013z M58.326,22.536h1.359v-2.484h-2.016V19.63h2.016v-1.828h0.469v1.828h2.063v0.422
+					h-2.063v2.484h1.547v4.781h-3.375V22.536z M58.794,26.896h2.438v-3.938h-2.438V26.896z M63.623,20.849l0.797,2.109l1.359-3.703
+					h-2.484l-0.797,3.188h-0.469l1.172-4.641h0.469l-0.281,1.031h3.234v0.422h-0.328l-1.594,4.219l1.594,4.031h-0.469l-1.406-3.516
+					l-1.359,3.516h-0.516l1.594-4.031l-1.031-2.625H63.623z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M73.326,17.661v3.047h4.359v0.422h-4.359v5.813h4.969v0.422
+					H68.029v-0.422h4.828V21.13h-4.313v-0.422h4.313v-3.047H73.326z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M79.654,26.521l1.219-0.563v-5.063h-1.219v-0.422h1.219v-2.484
+					h0.469v2.484h1.313v0.422h-1.313v4.875l1.359-0.609v0.422l-3.047,1.359V26.521z M90.201,25.161l-0.141,2.344h-6.469v-6.141
+					l-0.984,0.188v-0.469l0.984-0.188v-2.484h0.469v2.391l2.344-0.469v-2.531h0.469v2.438l3.234-0.656l-0.375,4.5h-1.594l-0.375-0.422
+					h1.5l0.281-3.516l-2.672,0.563v5.156h-0.469v-5.063l-2.344,0.422v5.859h5.531l0.141-2.297L90.201,25.161z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M92.92,27.036l0.516-0.469v-4.875h-1.453v-0.422h1.922v4.922
+					l1.266-1.078v0.563l-2.25,1.969V27.036z M94.748,20.427l-1.875-2.109v-0.656l1.875,2.109V20.427z M99.014,22.489l-3.563,5.016
+					h-0.563l3.656-5.156l0.047-4.5h0.469L99.014,22.489z M99.482,23.005l3.141,4.5h-0.563l-3.141-4.5H99.482z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M104.029,21.739h-0.469l2.672-3.984l2.625,3.891h-0.516
+					l-2.109-3.141L104.029,21.739z M104.404,26.192l1.688,0.516l1.641-3.234h-3.75v-0.375h4.453l-1.922,3.703l1.125,0.328v0.422
+					l-3.234-0.938V26.192z M105.811,20.38l1.125,1.875h-0.469l-1.125-1.875H105.811z M114.576,18.036v0.422h-5.672v-0.422H114.576z
+					 M111.482,25.161v-3.891h0.469v4.078l-2.906,2.25v-0.516L111.482,25.161z M114.154,19.817v5.484h-0.422v-5.109h-3.984v5.203h-0.469
+					v-5.578H114.154z M111.717,19.817h-0.469l0.234-1.359h0.469L111.717,19.817z M111.998,25.911v-0.563l2.391,1.688v0.563
+					L111.998,25.911z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M117.389,18.786l0.656-0.891h0.516l-0.656,0.891h2.156v8.766
+					h-3.891v-8.766H117.389z M116.639,22.583h2.953v-3.375h-2.953V22.583z M119.592,23.005h-2.953v4.125h2.953V23.005z M125.92,27.552
+					h-3l-0.328-0.422h2.859l0.141-8.016h-3.797l-0.844,1.875h-0.516l1.453-3.141h0.516l-0.422,0.844h4.078L125.92,27.552z
+					 M123.67,24.177l-0.938-3.094h-0.516l0.938,3.094H123.67z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M133.42,18.739v4.969h4.828v0.422h-4.828v3.75h-0.469v-3.75
+					h-4.922v-0.422h4.922v-4.969h-4.406v-0.422h9.234v0.422H133.42z M129.529,19.677l2.156,3.375h-0.516l-2.156-3.375H129.529z
+					 M136.748,19.677l-2.156,3.375h0.563l2.156-3.375H136.748z" />
+					<path style="fill:none;stroke:#009245;stroke-miterlimit:10;" d="M148.326,19.208l1.5,2.297h-9.422l3-3.75h0.563l-2.625,3.328
+					h7.547l-1.125-1.875H148.326z M149.357,23.474v3.703v0.422h-8.344v-0.422v-3.703v-0.422h8.344V23.474z M148.889,27.177v-3.703
+					h-7.406v3.703H148.889z" />
+				</g>
+			</svg>
+		</div>
+		<div class="slider" style="margin-top: 2rem;">
+			<ul class="slides">
+				<li>
+					<img src="img/banner2.jpg" class="responsive-img" style="width: 100%!important;height: 100%!important;">
+					<div class="caption right-align">
+						<h3>在线种植</h3>
+						<h5 class="light grey-text text-lighten-3">在线雇佣私人管家，足不出户知详情</h5>
+						<p class="pic right">
+							<img src="img/dialog.png" class="responsive-img hide-on-med-and-down" />
+						</p>
+					</div>
+				</li>
+				<li>
+					<img src="img/1.jpg" class="responsive-img" style="width: 100%!important;height: 100%!important;">
+					<div class="caption center-align pic">
+						<h3 class="white-text" style="color: #1C1E1D;">幅员辽阔，风景独好</h3>
+						<img src="img/fj2.jpg" style="width: 15em;height: 20em;" class="hide-on-med-and-down" />
+						<img src="img/falls.jpg" style="width: 15em;height: 20em;" class="hide-on-med-and-down" />
+						<img src="img/fj5.jpg" style="width: 15em;height: 20em;" class="hide-on-med-and-down" />
+					</div>
+				</li>
+				<li>
+					<img src="img/banner32.jpg" class="responsive-img" style="width: 100%!important;height: 100%!important;">
+					<div class="caption right-align">
+						<h3>梦里的田园婚礼</h3>
+						<h5 class="light grey-text text-lighten-3">在这片草坪上嗨起来吧</h5>
+						<img src="img/wed1.jpg" class="auto-phone hide-on-med-and-down" /><br />
+						<a class="btn waves-effect waves-light hide-on-med-and-down">欢迎你的加入</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="container" style="margin-top: 2rem;">
+			<div class="row">
+				<div class="card hoverable col l4 m4 s12" style="margin-right: 0;">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator responsive-img" src="img/zxzz.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">在线种植 <i class="material-icons right more">more_vert</i></span>
+						<p>
+							<a href="#zxzz"><i class="material-icons">forward</i></a>
+						</p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">在线种植<i class="material-icons right">close</i></span>
+						<p>在线认领、支付、种植、打理、收获、生长状态实时推送</p>
+					</div>
+				</div>
+				<div class="card hoverable col l4 m4 s12" style="margin-right: 0;">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator responsive-img" src="img/srgj.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">私人管家<i class="material-icons right more">more_vert</i></span>
+						<p>
+							<a href="#srgj"><i class="material-icons">forward</i></a>
+						</p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">私人管家<i class="material-icons right">close</i></span>
+						<p>在线雇佣私人管家，可根据经验、技能、年龄、服务、价格自由选择专职管家</p>
+					</div>
+				</div>
+				<div class="card hoverable col l4 m4 s12">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator responsive-img" src="img/sg.png">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">手工产品<i class="material-icons right more">more_vert</i></span>
+						<p>
+							<a href="#ctms"><i class="material-icons">forward</i></a>
+						</p>
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">手工农副产品<i class="material-icons right">close</i></span>
+						<p>专业团队，寻找传统手工农副产品，给你家的味道</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="parallax-container" id="zxzz" style="position: relative;">
+			<div class="parallax">
+				<img src="img/parallax.jpg" class="responsive-img parallax-pic"/>
+			</div>
+			<div class="txt1">
+				<h3 style="text-align: center;">每天<span style="font-size: 3rem;">6元钱</span></h3>
+				<h5 class="small-txt">全家一年<br />有机食材配送</h5>
+				<a href="zxzz.html" target="_blank" class="btn waves-effect waves-light right" style="margin-top: 2rem;">了解详情</a>
+			</div>
+		</div>
+		<div class="parallax-container" id="srgj">
+			<div class="parallax">
+				<img src="img/parallax2.jpg" class="responsive-img parallax-pic"/>
+			</div>
+			<div class="txt2">
+				<h3 style="position: relative;"><span style="font-size: 3rem;">私人管家</span></h3>
+				<h5 class="small-txt">通过手机下达指令，<br />种植、浇水、除草、<br />采摘、配送、<br />种植状态时时看</h5>
+				<a href="srgj.html" target="_blank" class="btn waves-effect waves-light left" style="margin-top: 1rem;">了解详情</a>
+			</div>
+		</div>
+		<div class="parallax-container" id="ctms">
+			<div class="parallax">
+				<img src="img/parallax3.jpg" class="responsive-img parallax-pic" />
+			</div>
+			<div class="txt3">
+				<h3 style="text-align: center;font-size: 3rem;">传统美食</h3>
+				<h5 class="small-txt">搜寻传统美食<br />给你家的味道</h5>
+				<a href="food.html" target="_blank" class="btn waves-effect waves-light right" style="margin-top: 2rem;">了解详情</a>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col hide-on-small-and-down m3 l3 wed">
+					<p class="z-depth-2">
+						<img src="img/place11.jpg" class="responsive-img"/>
+					</p>
+				</div>
+				<div class="col s12 m6 l6 wed">
+					<p>
+						<div style="background: rgba(0,0,0,.3);width: 100%;">
+							<video class="responsive-video" width="65%" height="auto" poster="img/poster.jpg" controls="controls" style="margin-left: 20%;">
+								<source src="video/wedding.mp4" type="video/mp4"></source>
+								当前浏览器不支持 video直接播放，点击这里下载视频：
+								<a href="myvideo.webm">下载视频</a>
+							</video>
+						</div>
+					</p>
+				</div>
+				<div class="col hide-on-small-and-down m3 l3 wed">
+					<p class="z-depth-2">
+						<img src="img/place33.jpg" />
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+			<a class="btn-floating btn-large red">
+				<i class="large material-icons">edit</i>
+			</a>
+			<ul>
+				<li>
+					<a class="btn-floating red tooltipped" data-position="left" data-delay="50" data-tooltip="点击随时给我们留言"><i class="large material-icons">add</i></a>
+				</li>
+				<li>
+					<a class="btn-floating yellow darken-1" onclick="Materialize.toast('收藏成功', 2000)"><i class="large material-icons">favorite</i></a>
+				</li>
+				<li>
+					<a href="#" class="btn-floating blue"><i class="large material-icons">publish</i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="center-align">
+			<ul class="pagination pagination-lg">
+				<li class="disabled">
+					<a>&laquo;</a>
+				</li>
+				<li class="active disabled">
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="secondPage.html" target="_blank">2</a>
+				</li>
+				<li>
+					<a href="thirdPage.html" target="_blank">3</a>
+				</li>
+				<li>
+					<a href="secondPage.html" target="_blank">&raquo;</a>
+				</li>
+			</ul>
+		</div>
+		<div class="foot">
+			<div class="foot-top">
+				<ul class="clearfix">
+					<li class="fl hide-on-small-and-down divise-line" style="height: 10rem;">
+						<dl>
+							<dt>家园栏目</dt>
+							<dd>
+								<ul class="clearfix">
+									<li class="fl">土地认领</li>
+									<li class="fl">专题活动</li>
+									<li class="fl">资讯动态</li>
+									<li class="fl">百科知识</li>
+									<li class="fl">帮助中心</li>
+									<li class="fl">招商加盟</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl hide-on-small-and-down divise-line" style="height: 10rem;">
+						<dl>
+							<dt>关于我们</dt>
+							<dd>
+								<ul class="clearfix">
+									<li class="fl">公司简介</li>
+									<li class="fl">版权申明</li>
+									<li class="fl">平台介绍</li>
+									<li class="fl">联系我们</li>
+									<li class="fl">资质荣誉</li>
+									<li class="fl">加入我们</li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl col s12 divise-line relation" style="width: 15rem;height: 10rem;">
+						<dl>
+							<dt>联系我们</dt>
+							<dd style="margin: 0;">
+								<ul>
+									<li style="padding: 0.2rem;margin-top: 0.5rem;">土地认领</li>
+									<li style="padding: 0.2rem;"><span style="color: #eee;font-size: 2rem;">0357-6150888</span></li>
+									<li style="padding: 0.2rem;"><small>(早08:00-晚18:00)</small></li>
+									<li style="padding: 0.5rem;"><img src="img/zxkf.png" /></li>
+								</ul>
+							</dd>
+						</dl>
+					</li>
+					<li class="fl hide-on-small-and-down divise-line blog hide-on-med-and-down" style="width: 12rem;height: 10rem;text-align: center;">
+						<div style="margin-bottom: 1rem;">
+							<img class="responsive-img" src="img/blog_bg.png" align="absmiddle" style="margin-right: 0.5rem;" />新浪微博
+							
+						</div>
+						<div style="margin-bottom: 1rem;">
+							<img class="responsive-img" src="img/txkj_bg.png" align="absmiddle" style="margin-right: 0.5rem;" />腾讯微博
+						</div>
+						<div style="margin-bottom: 1rem;">
+							<img class="responsive-img" src="img/qqkj.png" align="absmiddle" style="margin-right: 0.5rem;" />QQ空间
+						</div>
+					</li>
+					<li class="hide-on-med-and-down" class="fl" style="height: 10rem;text-align: center;">
+						<div style="display: inline-block;margin-right: 1rem;">
+							<img class="responsive-img" class="responsive-img" src="img/ewm.jpg" style="width: 8rem;height: 8rem;margin-bottom: 0.5rem;" />
+							<p>兴唐家园微信公众号</p>
+						</div>
+						<div style="display: inline-block;">
+							<img class="responsive-img" src="img/blog.png" style="width: 8rem;height: 8rem;margin-bottom: 0.5rem;" />
+							<p>微博公众平台</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-bottom">
+				晋© 2014 Copyright by sxxtjy
+			</div>
+		</div>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/materialize.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vivus.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
